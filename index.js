@@ -36,7 +36,9 @@ app.use("/api/notes",notes)
 
 
 
-
+app.get("/",(req,res)=>{
+  res.send("application deployed successfully ")
+})
 
 
 
