@@ -2,12 +2,13 @@ const connectToMongo=require('./db')
 connectToMongo();
 
 
-
+const dotenv=require('dotenv')
+dotenv.config({path:"./config.env"})
 
 //copied from expressjs documentation:  https://expressjs.com/en/starter/hello-world.html
 const express = require('express')
 const app = express()
-const port = 5000
+const port = process.env.PORT || 5000
 
 
 
