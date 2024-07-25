@@ -21,8 +21,8 @@ app.use(cors())
 app.use(express.json())
 
 //import routes 
-const user=require("./routes/auth")
-const notes=require("./routes/notes")
+const user=require("./Routes/Auth")
+const notes=require("./Routes/Notes")
 app.use("/api/auth",user)
 app.use("/api/notes",notes)
 
