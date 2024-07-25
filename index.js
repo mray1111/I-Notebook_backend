@@ -1,4 +1,4 @@
-const connectToMongo=require('./db.js')
+const connectToMongo=require('./database.js')
 connectToMongo();
 
 
@@ -21,8 +21,8 @@ app.use(cors())
 app.use(express.json())
 
 //import routes 
-const notes=require("./Route/Note.js")
-const user=require("./Route/Authenticated.js")
+const notes=require("./Route1/Note1.js")
+const user=require("./Route1/Authenticated1.js")
 app.use("/api/auth",user)
 app.use("/api/notes",notes)
 
